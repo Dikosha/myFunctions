@@ -10,6 +10,5 @@ function checkNumber(number){
     if(number.length != 10){
         return false;
     }
-    
     return number;
 }
