@@ -1,0 +1,10 @@
+function formatDate(date) {
+  if(typeof date == 'string' && date.split('.').length == 3){
+    return date;
+  }
+  date = new Date(date);
+  let m = (dt.getMonth() + 1).padStart(2, '0');
+  let d = dt.getDate().padStart(2, '0');
+  let y = dt.getFullYear();
+  return d + '.' + m + '.' + y;
+}
